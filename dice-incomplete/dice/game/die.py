@@ -34,4 +34,10 @@ class Die:
         Args:
             self (Die): An instance of Die.
         """
-        
+        self.value = random.randint(1, 6)
+        if self.value == 1:
+            self.points = 100
+        elif self.value == 5:
+            self.value = 50
+        else:
+            self.value = 0
